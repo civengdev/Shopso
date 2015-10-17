@@ -3,10 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Shopso</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/FontAwesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css"> <!-- always include external links first-->
 	<link rel="stylesheet" href="css/style.css">
-	
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/app.js"></script>
 </head>
 
 <body>
@@ -14,11 +16,11 @@
 
 
 <!--Header with logo etc -->
-	<header>
+	<header class="header">
 		<div class="content">
 			<div class="logo">
-				<i class="fa fa-shopping-cart"></i>
-				<h1>SHOPSO</h1>
+				<img id="logo-image" src="images/basketicon.png" alt="icon" width="100">
+				<h1><span class="teal-text">SHOPPING</span> LIST</h1>
 			</div>	
 		</div>
 	</header>
@@ -28,14 +30,9 @@
 <!-- Tools -->	
 	<section class="tools">
 		<div class="content">
-			<div class="create">
-				
-			</div>
-			<div class="delete">
-				
-			</div>
-			<div class="checked">
-				
+			<input id="add-title" type="text" name="add-title" value="+ ENTER LIST TITLE">
+			<div>
+				<button id="delete-list">DELETE LIST</button>
 			</div>
 		</div>
 	</section>
@@ -44,30 +41,40 @@
 
 
 <!-- List Body -->
+
 	<section class="list-body">
 		<div class="content">
-			<h2 class="title"></h2>
-			<div class="item-input">
-				<button class="add-item">add item</button>
-			</div>
-			<div class="left-list">
-				<button class="delete-item">delete</button>
-				<button class="addedtobag">add to bag</button>
-			</div>
-			<div class="right-list">
-				<button class="delete-item">delete</button>
-				<button class="addedtobag">add to bag</button>
-			</div>
+			<h2 class="list-title"><span class="teal-text">LIST TITLE</span></h2>
+			<input id="add-item" type="text" value="+ ADD LIST ITEM HERE">
+			<ul class="list-container">
+				<li class="items">
+					<div class="check-box"></div>
+					<span>Fish</span>
+					<img class="" src="" alt="">
+				</li>
+				<li class="items">
+					<div class="check-box"></div>
+					<span>Cheese</span>
+					<img class="" src="" alt="">
+				</li>
+				<li class="items">
+					<div class="check-box"></div>
+					<span>Bread</span>
+					<img class="" src="" alt="">
+				</li>
+				<li class="items">
+					<div class="check-box"></div>
+					<span>Oranges</span>
+					<img class="" src="" alt="">
+				</li>
+			</ul>
 		</div>
 	</section>
 
 
 <!-- Footer with social media-->
 <footer class="social-media">
-	<div class="content">
-		<h3>Share on Facebook</h3>	
-		<i class="fa fa-facebook"></i>
-	</div>
+	
 </footer>
 
 </body>
