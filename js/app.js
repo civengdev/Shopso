@@ -6,7 +6,7 @@ $(document).ready(function() {
 	--> onclick get the value from the "List Title" input and display it as List Title
 	*/
 	function addListTitle () {
-
+		
 	}
 	/*
 	b) delete list
