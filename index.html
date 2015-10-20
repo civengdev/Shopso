@@ -30,7 +30,8 @@
 <!-- Tools -->	
 	<section class="tools">
 		<div class="content">
-			<input id="add-title" type="text" name="add-title" value="+ ENTER LIST TITLE">
+			<input id="add-title" type="text" name="add-title" placeholder="+ ENTER LIST TITLE" value="">
+			<button id="add-list-title-button">+</button>
 			<div>
 				<button id="delete-list">DELETE LIST</button>
 			</div>
@@ -44,30 +45,11 @@
 
 	<section class="list-body">
 		<div class="content">
-			<h2 class="list-title"><span class="teal-text">LIST TITLE</span></h2>
-			<input id="add-item" type="text" value="+ ADD LIST ITEM HERE">
-			<ul class="list-container">
-				<li class="items">
-					<div class="check-box"></div>
-					<span>Fish</span>
-					<img class="" src="" alt="">
-				</li>
-				<li class="items">
-					<div class="check-box"></div>
-					<span>Cheese</span>
-					<img class="" src="" alt="">
-				</li>
-				<li class="items">
-					<div class="check-box"></div>
-					<span>Bread</span>
-					<img class="" src="" alt="">
-				</li>
-				<li class="items">
-					<div class="check-box"></div>
-					<span>Oranges</span>
-					<img class="" src="" alt="">
-				</li>
-			</ul>
+			<div>
+				<h2 class="list-title"><span class="teal-text" id="update-title"></span></h2>
+				<input id="add-item" type="text" placeholder="+ ADD LIST ITEM HERE" value="">
+				<ul class="list-container"></ul>
+			</div>
 		</div>
 	</section>
 
@@ -76,6 +58,5 @@
 <footer class="social-media">
 	
 </footer>
-
 </body>
 </html>

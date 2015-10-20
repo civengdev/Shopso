@@ -28,10 +28,6 @@ html {
 	font-size: 1.75em;
 	color: #bedb39;
 }
-.content {
-	margin: 0 auto;
-	text-align: center;
-}
 
 /* Tools */
 .tools {
@@ -62,7 +58,6 @@ html {
 	margin-top: 2em;
 	border: none;
 	border-radius: 1em;
-	
 }
 .tools #x-off {
 	padding-left: 1em;
@@ -106,8 +101,11 @@ html {
 }
 
 .list-body ul {
-margin: 0 auto;
-text-align: center;
+	text-align: center;
+	width: 100%;
+	list-style: none;
+	overflow: hidden;
+	padding-left: 0em;
 }
 .list-body .list-container li {
 	background-color: #1f8a70;
@@ -119,16 +117,34 @@ text-align: center;
 	margin-top: 2em;
 	border: none;
 	border-radius: 1em;
+	margin-left: auto;
+	margin-right: auto;
 }
+.list-body .content > div {
+	display: none;
+}
+.list-body .inside-list .x-icon {
+    float: left;
+    padding-left: 1em;
+    padding-top: .3em;
+    cursor: pointer;
+}
+.list-body .inside-list .tick-icon {
+	float: right;
+    padding-right: 1em;
+    padding-top: .3em;
+    cursor: pointer;
+}
+/*Tick functionality */
 
+.tick {
+	color: red;
+	text-decoration: line-through;
+}
+.show {
+	display: block !important; 
+}
 /* Footer */
 .social-media {
-	text-align: center;
-	margin-top: 0em;
-	background-color: #004358;
-}
-.social-media li {
-	display: inline-block;
-	padding: 0 2em 0 2em;
-{
 
+}
